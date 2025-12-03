@@ -1,33 +1,41 @@
+#define ll long long int
 class Solution {
   public:
-    int tsp(vector<vector<int>>& cost) {
-        // Code here
-        int n= cost.size();
-        int full = 1<<n,inf=1e9;
-        vector<vector<int>>dp(full,vector<int>(n,inf));
-        dp[1<<0][0]=0;
-        for(int mask=0;mask<full;mask++)
+    ll dp[16][(1<<16)];
+    ll solve(int i,ll mask,vector<vector<int>>&cost)
+    {
+        int n=cost.size();
+        if(mask==(1<<n)-1)
         {
-            for(int last =0;last<n;last++)
+            if(i==0)
             {
-                if(dp[mask][last] == inf) continue;
-                for(int nxt =0;nxt<n;nxt++)
+                return 0;
+            }
+            return INT_MAX;
+        }
+        if(dp[i][mask]!=-1)
+        {
+            return dp[i][mask];
+        }
+        ll ans=INT_MAX;
+        for(int j=0;j<n;j++)
+        {
+            if(!((mask>>j)&1))
+            {
+                ll temp=solve(j,(mask|(1LL<<j)),cost);
+                if(temp!=INT_MAX)
                 {
-                    if(mask &(1<<nxt)) continue;
-                    int nextMask = mask | (1<<nxt);
-                    dp[nextMask][nxt] = min(dp[nextMask][nxt],dp[mask][last]+cost[last][nxt]);
+                    ans=min(ans,cost[i][j]+temp);
                 }
             }
         }
+        return dp[i][mask]=ans;
+    }
+    
+    int tsp(vector<vector<int>>& cost) {
+        // code here
+        memset(dp,-1,sizeof dp);
+        return solve(0,0,cost);
         
-        int ans = inf;
-        int allMask = full - 1;
-        for(int last = 0; last < n; last++){
-            if (dp[allMask][last] < inf) {
-                ans = min(ans, dp[allMask][last] + cost[last][0]);
-            }
-        }
-        return ans;
-
     }
 };
