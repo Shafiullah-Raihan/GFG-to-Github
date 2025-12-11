@@ -1,0 +1,14 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/bell-numbers2108/1">Bell Numbers</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p style="font-family: Nunito, Bangla152, sans-serif;"><span style="font-size: 18px; font-family: Nunito, Bangla152, sans-serif;">Given a set of n elements, find number of ways of partitioning it.<br style="font-family: Nunito, Bangla152, sans-serif;"></span><span style="font-size: 18px; font-family: Nunito, Bangla152, sans-serif;">In other words, Let S(n, k) be total number of partitions of n elements into k sets. The answer will be the ∑</span><span style="font-size: 18px; font-family: Nunito, Bangla152, sans-serif;">S(n, k) for k = 1 to n.</span></p>
+<p style="font-family: Nunito, Bangla152, sans-serif;"><span style="font-size: 18px; font-family: Nunito, Bangla152, sans-serif;"><strong style="font-family: &quot;Source Sans 3&quot;, Bangla152, sans-serif;">Examples:</strong></span></p>
+<pre style="font-family: Nunito, Bangla152, sans-serif;"><span style="font-size: 18px; font-family: Nunito, Bangla152, sans-serif;"><strong style="font-family: &quot;Source Sans 3&quot;, Bangla152, sans-serif;">Input</strong>: n = 2
+<strong style="font-family: &quot;Source Sans 3&quot;, Bangla152, sans-serif;">Output:</strong> 2
+<strong style="font-family: &quot;Source Sans 3&quot;, Bangla152, sans-serif;">Explanation</strong>: Let the set be {1, 2}. The partitions are {{1},{2}} and {{1, 2}}.</span></pre>
+<pre style="font-family: Nunito, Bangla152, sans-serif;"><span style="font-size: 18px; font-family: Nunito, Bangla152, sans-serif;"><strong style="font-family: &quot;Source Sans 3&quot;, Bangla152, sans-serif;"><br style="font-family: Nunito, Bangla152, sans-serif;">Input: </strong>n = 3
+<strong style="font-family: &quot;Source Sans 3&quot;, Bangla152, sans-serif;">Output: </strong>5<br style="font-family: Nunito, Bangla152, sans-serif;"><strong style="font-family: &quot;Source Sans 3&quot;, Bangla152, sans-serif;">Explanation</strong>: Let the set be {1, 2, 3}. The partitions are<br style="font-family: Nunito, Bangla152, sans-serif;">{{1},{2},{3}}
+{{1},{2, 3}}
+{{2},{1, 3}}
+{{3},{1, 2}}
+{{1, 2, 3}}. </span></pre>
+<p style="font-family: Nunito, Bangla152, sans-serif;">&nbsp;</p>
+<p style="font-family: Nunito, Bangla152, sans-serif;"><span style="font-size: 18px; font-family: Nunito, Bangla152, sans-serif;"><strong style="font-family: &quot;Source Sans 3&quot;, Bangla152, sans-serif;">Constraints:</strong></span></p>
+<p style="font-family: Nunito, Bangla152, sans-serif;"><span style="font-size: 18px; font-family: Nunito, Bangla152, sans-serif;">1 ≤ n ≤ 13</span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Dynamic Programming</code>&nbsp;<code>Algorithms</code>&nbsp;
