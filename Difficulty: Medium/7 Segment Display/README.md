@@ -1,0 +1,9 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/7-segment-display0752/1?page=24&category=Matrix,Bit%20Magic,Linked%20List,Greedy,STL,Recursion,Binary%20Search%20Tree,DFS,Backtracking,number-theory,Heap,Prime%20Number,Divide%20and%20Conquer&sortBy=accuracy">7 Segment Display</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p><span style="font-size: 18px;">Given a string <strong>s </strong>of size n<strong> </strong>representing an n digit number displayed on a <a href="https://www.geeksforgeeks.org/digital-logic/seven-segment-displays/">seven segment display</a>, find smallest possible n digit number that uses same number of segments.&nbsp;</span></p>
+<p><span style="font-size: 18px;"><strong>Note</strong>: As shown in the below image, the number of segments used by digits 0 to 9 are 6, 2, 5, 5, 4, 5, 6, 7 and 6 respectively.</span><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/705548/Web/Other/blobid0_1785655750.png" width="424" height="238"></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><span style="font-size: 18px;"><strong>Input: </strong>s = "234567"
+<strong>Output: </strong>000011
+<strong>Explanation: </strong>234567 uses 28 segments in total. The smallest 6 digit number that uses exactly 28 segments is 000011.</span></span></pre>
+<pre><span style="font-size: 18px;"><span style="font-size: 18px;"><strong>Input: </strong>s = "9"<strong>
+Output: </strong>0<strong>
+Explanation: </strong>The digit 9 uses 6 segments. The smallest digit that also uses exactly 6 segments is 0, so the answer is 0.</span></span></pre></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Greedy</code>&nbsp;<code>Mathematical</code>&nbsp;
